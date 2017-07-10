@@ -22,14 +22,13 @@
             0 };
         
         NSOpenGLPixelFormat *format;
-        format = [[NSOpenGLPixelFormat alloc] initWithAttributes:attributes]; // removed [ autorelease] wrapper
+        format = [[NSOpenGLPixelFormat alloc] initWithAttributes:attributes];
         
         glView = [[MyOpenGLView alloc] initWithFrame:NSZeroRect pixelFormat:format];
         
         if (!glView)
         {
             NSLog(@"Couldn't initialize OpenGL view.");
-//            [self autorelease];
             return nil;
         }
         
@@ -54,14 +53,6 @@
 - (void)drawRect:(NSRect)rect
 {
     [super drawRect:rect];
-    
-    
-//        NSBundle *bundle=[NSBundle bundleWithIdentifier:@"com.gameaholix.3DSaverTest"];
-//        NSImage *backgroundImage = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"synthwave-fhd-1920x1080" ofType:@"jpg"]];
-//    
-//        [backgroundImage drawInRect:[self bounds]
-//                           fromRect:NSMakeRect(0, 0, backgroundImage.size.width, backgroundImage.size.height)
-//                          operation:NSCompositingOperationSourceAtop fraction:1.0];
     
     [[glView openGLContext] makeCurrentContext];
     
@@ -222,8 +213,6 @@
 - (void)dealloc
 {
     [glView removeFromSuperview];
-//    [glView release];
-//    [super dealloc];
 }
 
 @end
