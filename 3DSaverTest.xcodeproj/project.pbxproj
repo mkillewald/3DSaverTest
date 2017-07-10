@@ -63,8 +63,7 @@
 				4DD45C6C1E9E8BED0041EFC0 /* MyOpenGLView.m */,
 				4DD45C561E9E724E0041EFC0 /* Info.plist */,
 			);
-			name = 3DSaverTest;
-			path = Offworld3D;
+			path = 3DSaverTest;
 			sourceTree = "<group>";
 		};
 		4DD45C5C1E9E727F0041EFC0 /* Frameworks */ = {
@@ -260,7 +259,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2XM2MCTE5S;
-				INFOPLIST_FILE = Offworld3D/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/3DSaverTest/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gameaholix.3DSaverTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,7 +274,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 2XM2MCTE5S;
-				INFOPLIST_FILE = Offworld3D/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/3DSaverTest/Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gameaholix.3DSaverTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
